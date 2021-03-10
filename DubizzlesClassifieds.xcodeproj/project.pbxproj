@@ -438,13 +438,6 @@
 			path = CoreNetworking;
 			sourceTree = "<group>";
 		};
-		137F168A25F6323B00D2008D /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
 		137F169D25F6347B00D2008D /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -516,17 +509,16 @@
 		1398B7EA25F61EBF0005597D /* dubizzlesClassifieds */ = {
 			isa = PBXGroup;
 			children = (
-				137F15CF25F6228100D2008D /* Extentions */,
-				137F15C325F621CE00D2008D /* Enums */,
-				137F15BD25F6219C00D2008D /* Helpers */,
-				137F15A625F6212F00D2008D /* Modules */,
 				1398B83325F61FE30005597D /* Appdelegate */,
 				137F15A025F620F600D2008D /* Bootstrapper */,
-				1398B83725F61FF60005597D /* Storyboards */,
-				1398B83825F620050005597D /* Resources */,
-				1398B83925F620100005597D /* Plists */,
-				137F168A25F6323B00D2008D /* Constants */,
+				137F15C325F621CE00D2008D /* Enums */,
+				137F15CF25F6228100D2008D /* Extentions */,
+				137F15BD25F6219C00D2008D /* Helpers */,
+				137F15A625F6212F00D2008D /* Modules */,
 				137F169D25F6347B00D2008D /* NetworkLayer */,
+				1398B83925F620100005597D /* Plists */,
+				1398B83825F620050005597D /* Resources */,
+				1398B83725F61FF60005597D /* Storyboards */,
 			);
 			path = dubizzlesClassifieds;
 			sourceTree = "<group>";
