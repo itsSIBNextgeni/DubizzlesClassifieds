@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SplashViewController" customModule="DubizzlesClassifieds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dclasified_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ofV-9O-maS">
+                                <rect key="frame" x="88" y="264" width="238" height="189"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D Classified" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boR-qf-iZ7">
+                                <rect key="frame" x="115.5" y="498.5" width="183.5" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ofV-9O-maS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="8TP-f1-63g"/>
+                            <constraint firstItem="ofV-9O-maS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CcT-gL-MlX"/>
+                            <constraint firstItem="boR-qf-iZ7" firstAttribute="top" secondItem="ofV-9O-maS" secondAttribute="bottom" multiplier="1.1" id="WCH-N1-RL5"/>
+                            <constraint firstItem="boR-qf-iZ7" firstAttribute="centerX" secondItem="ofV-9O-maS" secondAttribute="centerX" id="ct4-Qw-kKe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="103"/>
+        </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="3XC-pV-34Z">
+            <objects>
+                <viewController storyboardIdentifier="DashboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SEI-jR-zCG" customClass="DashboardViewController" customModule="DubizzlesClassifieds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ExI-na-JmI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cLf-fh-r8b">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jfh-1F-AC7">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="phF-PQ-rmh">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RWx-t6-kvQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vbz-2O-lkM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cLf-fh-r8b" firstAttribute="leading" secondItem="Vbz-2O-lkM" secondAttribute="leading" id="7tY-m1-SR6"/>
+                            <constraint firstItem="Vbz-2O-lkM" firstAttribute="trailing" secondItem="cLf-fh-r8b" secondAttribute="trailing" id="XuJ-BR-6Z0"/>
+                            <constraint firstItem="cLf-fh-r8b" firstAttribute="top" secondItem="Vbz-2O-lkM" secondAttribute="top" id="p9F-Qo-vUe"/>
+                            <constraint firstItem="Vbz-2O-lkM" firstAttribute="bottom" secondItem="cLf-fh-r8b" secondAttribute="bottom" id="yC5-AJ-lCR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="cLf-fh-r8b" id="MLo-jK-yUr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yl4-Jv-grv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749" y="102"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="rgB-aA-DoF">
+            <objects>
+                <viewController storyboardIdentifier="DetailsViewController" title="Details" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nDE-7H-Le8" customClass="DetailsViewController" customModule="DubizzlesClassifieds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vTm-lK-qMx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HAH-Ll-5kD">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jho-l0-K87"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HAH-Ll-5kD" secondAttribute="bottom" id="Clf-7g-6QK"/>
+                            <constraint firstItem="HAH-Ll-5kD" firstAttribute="trailing" secondItem="Jho-l0-K87" secondAttribute="trailing" id="GZY-rv-EBs"/>
+                            <constraint firstItem="HAH-Ll-5kD" firstAttribute="leading" secondItem="Jho-l0-K87" secondAttribute="leading" id="gXV-yZ-6v3"/>
+                            <constraint firstItem="HAH-Ll-5kD" firstAttribute="top" secondItem="Jho-l0-K87" secondAttribute="top" id="yIV-lr-JPT"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="detailsTableView" destination="HAH-Ll-5kD" id="cqs-3T-g2y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tii-Br-XO7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dclasified_logo" width="238" height="189"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
