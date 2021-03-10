@@ -2,7 +2,7 @@
 //  ImageCacher.swift
 //  BayutDubizzleImageCacher
 //
-//  Created by HasnainKanji on 08/03/2021.
+//  Created by Shahzaib Iqbal Bhatti on 10/3/2021.
 //
 
 import Foundation
